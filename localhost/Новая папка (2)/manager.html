@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+	<meta charset="UTF-8">
+	 <style>
+	
+        </style>
+	<title>Кадровый учет крюингово агенства</title>
+	
+	<link href="style6.css" rel="stylesheet" type="text/css"/>
+</head>
+<body >
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+	<div id="main">
+		<div class="header">
+		
+		<p><h1>Кадровый учет крюингово агенства</h1></p>
+		<hr class="hr1">
+		</div>
+
+		<div class="row">
+			<div class="left_col"> 
+				<div class="inner-left_col">
+					<div class="vertical-menu">
+ <a  class="active">Меню</a>
+  <a align="left" href="for_sailor.html">Анкета для моряка</a>
+  <a align="left" href="additional_data.html">Дополнительные данные о моряке</a>
+   <a align="left" href="manager.html">Менеджеру</a>
+   <a align="left" href="constants.html">Константы</a>
+   <a align="left" href="POISK.html">Информация о моряке</a>
+  <a align="left" href="#">В каких компаниях работают наши моряки</a>
+  <a align="left" href="in_faight.html">Кого из моряков можно направить на судно</a>
+</div>
+					</div> 
+				</div>
+				
+				
+				
+				
+				<div class="right_col">
+			    <div class="inner-right_col">
+			<div class="container">
+			
+			<p> Старница заполняеться только менеджером! Пожалуйста, сверяйтесь с константами и данными клиента для коректного ввода данных. </p>
+			 <table>
+			
+			 
+			
+		
+			 
+	         <tr>
+			   
+		<td> 
+			   <p><h2>Контрак для судна</h2><br>
+			  <form action="contract_for_ship.php" form method="POST">
+             <p>Код контракта для судна:<br> 
+             <input align="center" type="text" name="idContract_for_ship" /></p>
+             <p>Тип судна: <br> 
+             <input type="text" name="Ship_Type_of_vessel" /></p>
+			 <p>Код владельца судна:<br>
+			 <input type="text" name="Ship_Shipowners_idShipowners" /></p>
+             <p>Код страны:<br>
+			 <input type="text" name="Ship_Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>
+			 
+               
+	         <td> 
+			 <form action="command.php" form method="POST">
+             <p><h2>Команда</h2><br>
+             <p>Код команды:<br> 
+             <input type="text" name="idCommand" /></p>
+             <p>Зарплата: <br> 
+             <input type="text" name="Salary" /></p>
+			 <p>Код контракта для судна: <br> 
+             <input type="text" name="Contract_for_ship_idContract_for_ship" /></p>
+			 <p>Код звания: <br> 
+             <input type="text" name="Rank_idRank" /></p>
+			 
+			 
+             <p><input type="submit"  value="Добавить" class="registerbtn"><br>
+			  </form>
+			  </td>
+			  
+			   
+			 </tr>
+			  
+			  <tr>
+			  
+			  <td> 
+			   <p><h2>Должности</h2><br>
+			  <form action="Jobs.php" form method="POST">
+             <p>Код должности:<br> 
+             <input align="center" type="text" name="idJobs" /></p>
+             <p>Зарплата: <br> 
+             <input type="text" name="Salary" /></p>
+			 <p>Предполагаемая дата вступления в должность:<br>
+			 <input type="date" name="Estimated_date_of_taking_up_position" /></p>
+             <p>Код заявления на работу:<br>
+			 <input type="text" name="Application_for_job_idApplication_for_job" /></p>
+			 			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			   <td>
+			<form action="Arrival.php" form method="POST">
+				 <p><h2>Прибытие</h2><br>
+             <p>Код страны выдачи паспорта:<br> 
+             <input type="text" name="idArrival" /></p>
+             <p>Дата прибытия: <br> 
+             <input type="date" name="Arrival_date" /></p>
+			   <p>Код логистики: <br> 
+             <input type="text" name="Logistics_idLogistics" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			  		 
+			 </tr>
+			 
+			 <tr>
+			   <td> 
+			   <p><h2>Логистика</h2><br>
+			 <form action="Logistics.php" form method="POST">
+             <p>Код логистики:<br> 
+             <input align="center" type="text" name="idLogistics" /></p>
+             <p>Звание: <br> 
+             <input type="text" name="Rank" /></p>
+			 <p>Код профиял моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+             <p>Тип судна:<br>
+			 <input type="text" name="Ship_Type_of_vessel" /></p>
+			 <p>Код судовладельца:<br>
+			 <input type="text" name="Ship_Shipowners_idShipowners" /></p>
+			 <p>Код страны:<br>
+			 <input type="text" name="Ship_Country_idCountry" /></p>
+			 
+			 <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			 
+			 <td> 
+			   <p><h2>Знание английского</h2><br>
+			  <form action="Knowledge_of_language.php" form method="POST">
+             <p>Код знания английского:<br> 
+             <input align="center" type="text" name="idKnowledge_of_language" /></p>
+             <p>Языки: <br> 
+             <input type="text" name="Language" /></p>
+			 <p>Уровень знания:<br>
+			 <input type="text" name="Proficiency" /></p>
+             <p>Оценка:<br>
+			 <input type="text" name="Mark" /></p>
+			  <p>Код профиля моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+			 
+			 <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			 
+			 
+			 </tr>
+			   
+			  
+				  
+			 </table>
+				  
+            
+			 </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer"><p>© 2020 Молчанюк Юлия Евгеньевна ФСИТиС 4/2 </p></div>
+			</div>
+			<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+			<script>
+				function doClick(){
+					alert("Кнопка нажата")
+				}
+			</script>
+
+			<script>
+						
+		</body>
+
+		</html>
+

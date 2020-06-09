@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+	<meta charset="UTF-8">
+	 <style>
+	
+        </style>
+	<title>Кадровый учет крюингово агенства</title>
+	
+	<link href="style6.css" rel="stylesheet" type="text/css"/>
+</head>
+<body >
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+	<div id="main">
+		<div class="header">
+		
+		<p><h1>Кадровый учет крюингово агенства</h1></p>
+		<hr class="hr1">
+		</div>
+
+		<div class="row">
+			<div class="left_col"> 
+				<div class="inner-left_col">
+					<div class="vertical-menu">
+ <a  class="active">Меню</a>
+  <a align="left" href="for_sailor.html">Анкета для моряка</a>
+  <a align="left" href="additional_data.html">Дополнительные данные о моряке</a>
+   <a align="left" href="manager.html">Менеджеру</a>
+   <a align="left" href="constants.html">Константы</a>
+   <a align="left" href="POISK.html">Информация о моряке</a>
+  <a align="left" href="#">В каких компаниях работают наши моряки</a>
+  <a align="left" href="in_faight.html">Кого из моряков можно направить на судно</a>
+</div>
+					</div> 
+				</div>
+				
+				
+				
+				
+				<div class="right_col">
+			    <div class="inner-right_col">
+			<div class="container">
+			
+			<p> Пожалуйста, заполняйте эту страницу только после заполненя анкеты. Будте внимательны и сверяйтесь с документами.</p>
+			 <table>
+			
+			 
+			
+		
+			 
+	         <tr>
+			 <td> 
+			   <p><h2>Визы</h2><br>
+			  <form action="Visas.php" form method="POST">
+             <p>Код визы:<br> 
+             <input align="center" type="text" name="idVisas" /></p>
+             <p>Дата выдачи: <br> 
+             <input type="date" name="Date_of_issue" /></p>
+			 <p>Действует до:<br>
+			 <input type="date" name="Date_of" /></p>
+             <p>Тип визы:<br>
+			 <input type="text" name="The_type_of_visa" /></p>
+			 <p>Код профиля моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+			 <p>Код страны выдавшей визу:<br>
+			 <input type="text" name="The_country_issued_visa_idThe_country_issued_visa" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+             
+			 
+	       
+			  
+			
+			       
+				   
+				   
+				
+
+               <td> 
+			   <p><h2>Заявление на работу</h2><br>
+			  <form action="Application_for_job.php" form method="POST">
+             <p>Код заявления на работу:<br> 
+             <input align="center" type="text" name="idApplication_for_job" /></p>
+             <p>Номер заявления: <br> 
+             <input type="text" name="Application_number" /></p>
+			 <p>Дата заявления:<br>
+			 <input type="date" name="Application_date" /></p>
+             <p>Тип судна:<br>
+			 <input type="text" name="Ship_Type_of_vessel" /></p>
+			 <p>Код судовладельца:<br>
+			 <input type="text" name="Ship_Shipowners_idShipowners" /></p>
+			 <p>Код страны:<br>
+			 <input type="text" name="Ship_Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			   
+			 </tr>
+			  
+			  <tr>
+			  
+			  <td> 
+			   <p><h2>Звание</h2><br>
+			  <form action="rank.php" form method="POST">
+             <p>Код звания:<br> 
+             <input align="center" type="text" name="idRank" /></p>
+
+             <p>Наличие лицензии: <br> 
+             <p><select name="Availability_of_the_license_office">
+             <option>Выберите из списка</option>
+             <option>0</option>
+             <option>1</option> 
+             </select></p>
+
+			 <p>Подтверждение лицензии:<br>
+             <p><select name="Confirmation_of_the_license">
+             <option>Выберите из списка</option>
+             <option>0</option>
+             <option>1</option> 
+             </select></p>
+
+             <p>Подтверждение код:<br>
+			 <input type="text" name="Confirmation_code" /></p>
+			 <p>Код диплома:<br>
+			 <input type="text" name="Code_diploma" /></p>
+
+			 <p>Тип диплома:<br>
+             <p><select name="Type_of_diploma">
+             <option>Выберите из списка</option>
+             <option>working</option>
+             <option>training</option> 
+             </select></p>
+
+
+			 
+			 <p>Код должности:<br>
+			 <input type="text" name="Jobs_idJobs" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>
+			  
+			   <td > 
+			   <p><h2>Дети</h2><br>
+			  <form action="Children.php" form method="POST">
+            
+             <p>Следующий родственик: <br> 
+             <input type="text" name="Next_to_kin" /></p>
+			 <p>Адрес ближайщего родственика:<br>
+			 <input type="text" name="Address_of_nearest_relative" /></p>
+             <p>Код профиля моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+			
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  		 
+			 </tr>
+			   
+			  
+				  
+			 </table>
+				  
+            
+			 </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer"><p>© 2020 Молчанюк Юлия Евгеньевна ФСИТиС 4/2 </p></div>
+			</div>
+			<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+			<script>
+				function doClick(){
+					alert("Кнопка нажата")
+				}
+			</script>
+
+			<script>
+		</body>
+		</html>

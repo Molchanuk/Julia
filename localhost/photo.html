@@ -1,0 +1,24 @@
+</head> 
+<body>
+<meta charset="UTF-8">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <table border=0>
+      <tr>
+        <td>	  
+   фамилия:  
+        </td>
+        <td>	  
+  <input type="text" name="sailorFamily" id="family">
+        </td>	
+     <td rowspan=2> 
+         <IMG src = "noimage.png"> <br>
+	Select image to upload: <input type="file" name="fileToUpload" id="fileToUpload">  	 
+    </td>			
+     </tr>
+         <tr>
+        <td>	 	 
+   должность: 
+      </td>
+        <td>	 	 
+  <!--  Это выпадающий список, заполненный должностями моряка из БД  -->		
+  <select name="sailorPosition" >

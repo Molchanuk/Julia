@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+	<meta charset="UTF-8">
+	 <style>
+	
+        </style>
+	<title>Кадровый учет крюингово агенства</title>
+	<link href="style3.css" rel="stylesheet" type="text/css"/>
+</head>
+<body >
+	<div id="main">
+		<div class="header">
+		<p>  <input type="button" value="Регистрация" class="b1" onClick='location.href="reg.html"'></p>
+		<p>  <input type="button" value="Вход" class="b1" onClick='location.href="reg.html"'></p>
+		<br>
+		<p><h1>Кадровый учет крюингово агенства</h1></p>
+		
+		</div>
+
+		<div class="row">
+			<div class="left_col"> 
+				<div class="inner-left_col">
+					<p id="menu"><H2 id="menu">Меню</h2></p>
+
+						<p><a href="index.html">Внести данные</a></p>
+						<p><a href="10_leg.html">Личная карточка моряка</a></p>
+						<p><a href="different.html">В каких компаниях работают наши моряки</a></p>
+						<p><a href="reg.html">Кого из моряков можно направить на судно</a></p>
+					</div> 
+				</div>
+				
+				
+				
+				
+				<div class="right_col">
+			    <div class="inner-right_col">
+			
+			 <table>
+			 <tr>
+            <th>Заявление о приеме на работу</th> <th>Профиль моряка</th> <th>Логистика</th> <th>Судовой контракт</th>
+        </tr>
+		</table>
+			 <table>
+			
+			 
+			 <tr>
+            <th>Звание</th> <th>Команда</th> <th>Страна</th>
+        </tr>
+		
+			 
+	         <tr>
+			 
+             <td> 
+			   <p>Звание<br>
+			  <form action="rank.php" form method="POST">
+             <p>Код звания:<br> 
+             <input align="center" type="text" name="idRank" /></p>
+             <p>Наличие лицензии: <br> 
+             <input type="text" name="Availability_of_the_license_office" /></p>
+			 <p>Подтверждение лицензии:<br>
+			 <input type="text" name="Confirmation_of_the_license" /></p>
+             <p>Подтверждение код:<br>
+			 <input type="text" name="Confirmation_code" /></p>
+			 <p>Код диплома:<br>
+			 <input type="text" name="Code_diploma" /></p>
+			 <p>Тип диплома:<br>
+			 <input type="text" name="Type_of_diploma" /></p>
+			 <p>Код должности:<br>
+			 <input type="text" name="Jobs_idJobs" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>
+			 
+	         <td> 
+			 <form action="command.php" form method="POST">
+             <p>Команда<br>
+             <p>Код команды:<br> 
+             <input type="text" name="idCommand" /></p>
+             <p>Зарплата: <br> 
+             <input type="text" name="Salary" /></p>
+			 <p>Код контракта для судна: <br> 
+             <input type="text" name="Contract_for_ship_idContract_for_ship" /></p>
+			 <p>Код звания: <br> 
+             <input type="text" name="Rank_idRank" /></p>
+			 
+			 
+             <p><input type="submit"  value="Добавить" class="registerbtn"><br>
+			  </form>
+			  </td>
+			  
+			<td>
+			<form action="1.php" form method="POST">
+				 <p>Cтрана<br>
+             <p>Код страны:<br> 
+             <input type="text" name="idCountry" /></p>
+             <p>Страна: <br> 
+             <input type="text" name="Name" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			       </tr>
+				   
+				   <tr>
+				   <td> 
+			   <p>Судно<br>
+			  <form action="ship.php" form method="POST">
+             <p>Тип судна:<br> 
+             <input align="center" type="text" name="Type_of_vessel" /></p>
+             <p>Имя судна: <br> 
+             <input type="text" name="Ship_name" /></p>
+			 <p>Владелец судна:<br>
+			 <input type="text" name="Shipowners_idShipowners" /></p>
+             <p>Код страны:<br>
+			 <input type="text" name="Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>
+			  
+			  <td>
+			<form action="Shipowners.php" form method="POST">
+				 <p>Судовладельцы<br>
+             <p>Код судовладельца:<br> 
+             <input type="text" name="idShipowners" /></p>
+             <p>Почта: <br> 
+             <input type="text" name="Email" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			 
+			 <td> 
+			   <p>Контрак для судна<br>
+			  <form action="contract_for_ship.php" form method="POST">
+             <p>Код контракта для судна:<br> 
+             <input align="center" type="text" name="idContract_for_ship" /></p>
+             <p>Тип судна: <br> 
+             <input type="text" name="Ship_Type_of_vessel" /></p>
+			 <p>Код владельца судна:<br>
+			 <input type="text" name="Ship_Shipowners_idShipowners" /></p>
+             <p>Код страны:<br>
+			 <input type="text" name="Ship_Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>
+			  
+				</tr>  
+				
+				<tr>
+
+               <td> 
+			   <p>Заявление на работу<br>
+			  <form action="Application_for_job.php" form method="POST">
+             <p>Код заявления на работу:<br> 
+             <input align="center" type="text" name="idApplication_for_job" /></p>
+             <p>Номер заявления: <br> 
+             <input type="text" name="Application_number" /></p>
+			 <p>Дата заявления:<br>
+			 <input type="text" name="Application_date" /></p>
+             <p>Тип судна:<br>
+			 <input type="text" name="Ship_Type_of_vessel" /></p>
+			 <p>Код судовладельца:<br>
+			 <input type="text" name="Ship_Shipowners_idShipowners" /></p>
+			 <p>Код страны:<br>
+			 <input type="text" name="Ship_Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			   <td> 
+			   <p>Должности<br>
+			  <form action="Jobs.php" form method="POST">
+             <p>Код должности:<br> 
+             <input align="center" type="text" name="idJobs" /></p>
+             <p>Зарплата: <br> 
+             <input type="text" name="Salary" /></p>
+			 <p>Предполагаемая дата вступления в должность:<br>
+			 <input type="text" name="Estimated_date_of_taking_up_position" /></p>
+             <p>Код заявления на работу:<br>
+			 <input type="text" name="Application_for_job_idApplication_for_job" /></p>
+			 			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			  <td> 
+			   <p>Профиль моряка<br>
+			  <form action="Profile_sailor.php" form method="POST">
+             <p>Код профиля моряка:<br> 
+             <input align="center" type="text" name="idProfile_sailor" /></p>
+             <p>Фамилия: <br> 
+             <input type="text" name="Surname" /></p>
+			 <p>Имя:<br>
+			 <input type="text" name="Name" /></p>
+             <p>Отчество:<br>
+			 <input type="text" name="Patronymic" /></p>
+			 <p>День рождения:<br> 
+             <input align="center" type="text" name="Date_of_birth" /></p>
+             <p>Место рождения: <br> 
+             <input type="text" name="Place_of_birth" /></p>
+			 <p>Домашний адрес:<br>
+			 <input type="text" name="Home_address" /></p>
+             <p>Домашний телефон :<br>
+			 <input type="text" name="Phone_home" /></p>
+			 
+			 <p>Мобильный телефон:<br> 
+             <input align="center" type="text" name="Mobile_phone" /></p>
+             <p>Гражданстов: <br> 
+             <input type="text" name="Citizenship" /></p>
+			 <p>Семейное положение:<br>
+			 <input type="text" name="Marital_Status" /></p>
+             <p>Рост:<br>
+			 <input type="text" name="Height" /></p>
+			 
+			 <p>Вес:<br> 
+             <input align="center" type="text" name="Weight" /></p>
+             <p>Дата мед-осмотра: <br> 
+             <input type="text" name="Date_of_medical_examination" /></p>
+			 <p>Дата теста на алкоголь и наркотики:<br>
+			 <input type="text" name="Drugs_and_Alcohol_test_date" /></p>
+             <p>Номер нац. паспорта:<br>
+			 <input type="text" name="National_passport№" /></p>
+			 
+			 <p>Дата выдачи нац. паспорта:<br> 
+             <input align="center" type="text" name="National_passport_issued" /></p>
+             <p>Номер загран. паспорт: <br> 
+             <input type="text" name="International_passport№" /></p>
+			 <p>Дата выдачи загран. паспорта:<br>
+			 <input type="text" name="International_passport_issued" /></p>
+             <p>Действителен до(загран. паспорт):<br>
+			 <input type="text" name="International_passport_valid" /></p>
+			 
+			 <p>Номер паспорта моряка:<br> 
+             <input align="center" type="text" name="Seaman_passport№" /></p>
+             <p>Дата выдачи паспорта моряка: <br> 
+             <input type="text" name="Seaman_passport_issued" /></p>
+			 <p>Действителен до(паспорт моряка):<br>
+			 <input type="text" name="Seaman_passport_valid" /></p>
+             <p>Готов к рейсу:<br>
+			 <input type="text" name="Ready_to_fight" /></p>
+			 
+			 <p>В рейсе или нет:<br>
+			 <input type="text" name="In_fight" /></p>
+             <p>Звание:<br>
+			 <input type="text" name="Rank" /></p>
+			  <p>Фото:<br>
+			 <input type="text" name="Photo" /></p>
+			 			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			  
+              </tr>	
+
+			  <tr>
+			  <td>
+			<form action="The_country_issued_visa.php" form method="POST">
+				 <p>Cтрана выдачи визы<br>
+             <p>Код страны выдачи визы:<br> 
+             <input type="text" name="idThe_country_issued_visa" /></p>
+             <p>Код страны: <br> 
+             <input type="text" name="Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			 
+			  <td> 
+			   <p>Визы<br>
+			  <form action="Visas.php" form method="POST">
+             <p>Код визы:<br> 
+             <input align="center" type="text" name="idVisas" /></p>
+             <p>Дата выдачи: <br> 
+             <input type="text" name="Date_of_issue" /></p>
+			 <p>Действует до:<br>
+			 <input type="text" name="Date_of" /></p>
+             <p>Тип визы:<br>
+			 <input type="text" name="The_type_of_visa" /></p>
+			 <p>Код профиля моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+			 <p>Код страны выдавшей визу:<br>
+			 <input type="text" name="The_country_issued_visa_idThe_country_issued_visa" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			   <td> 
+			   <p>Дети<br>
+			  <form action="Children.php" form method="POST">
+             <p>Код ребенка:<br> 
+             <input align="center" type="text" name="idChildren" /></p>
+             <p>Следующий родственик: <br> 
+             <input type="text" name="Next_to_kin" /></p>
+			 <p>Адрес ближайщего родственика:<br>
+			 <input type="text" name="Address_of_nearest_relative" /></p>
+             <p>Код профиля моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+			
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  		 
+			 </tr>
+			   
+			   <tr>
+			 <td> 
+			   <p>Знание английского<br>
+			  <form action="Knowledge_of_language.php" form method="POST">
+             <p>Код знания английского:<br> 
+             <input align="center" type="text" name="idKnowledge_of_language" /></p>
+             <p>Языки: <br> 
+             <input type="text" name="Language" /></p>
+			 <p>Уровень знания:<br>
+			 <input type="text" name="Proficiency" /></p>
+             <p>Оценка:<br>
+			 <input type="text" name="Mark" /></p>
+			  <p>Код профиля моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+			 
+			 <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			  <td> 
+			   <p>Логистика<br>
+			 <form action="Logistics.php" form method="POST">
+             <p>Код логистики:<br> 
+             <input align="center" type="text" name="idLogistics" /></p>
+             <p>Звание: <br> 
+             <input type="text" name="Rank" /></p>
+			 <p>Код профиял моряка:<br>
+			 <input type="text" name="Profile_sailor_idProfile_sailor" /></p>
+             <p>Тип судна:<br>
+			 <input type="text" name="Ship_Type_of_vessel" /></p>
+			 <p>Код судовладельца:<br>
+			 <input type="text" name="Ship_Shipowners_idShipowners" /></p>
+			 <p>Код страны:<br>
+			 <input type="text" name="Ship_Country_idCountry" /></p>
+			 
+			 <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>	
+			  
+			  <td>
+			<form action="Arrival.php" form method="POST">
+				 <p>Прибытие<br>
+             <p>Код страны выдачи паспорта:<br> 
+             <input type="text" name="idArrival" /></p>
+             <p>Дата прибытия: <br> 
+             <input type="text" name="Arrival_date" /></p>
+			   <p>Код логистики: <br> 
+             <input type="text" name="Logistics_idLogistics" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			  </tr>
+				  
+			 </table>
+				  
+            
+			 
+						</div>
+					</div>
+				</div>
+
+				<div class="footer"><p>© 2020 Молчанюк Юлия Евгеньевна ФСИТиС 4/2 </p></div>
+			</div>
+			<script>
+				function doClick(){
+					alert("Кнопка нажата")
+				}
+			</script>
+		</body>
+		</html>

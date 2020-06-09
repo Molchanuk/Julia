@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+	<meta charset="UTF-8">
+	 <style>
+	
+        </style>
+	<title>Кадровый учет крюингово агенства</title>
+	
+	<link href="style6.css" rel="stylesheet" type="text/css"/>
+</head>
+<body >
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+	<div id="main">
+		<div class="header">
+		
+		<p><h1>Кадровый учет крюингово агенства</h1></p>
+		<hr class="hr1">
+		</div>
+
+		<div class="row">
+			<div class="left_col"> 
+				<div class="inner-left_col">
+					<div class="vertical-menu">
+ <a    class="active">Меню</a>
+  <a align="left" href="for_sailor.html">Анкета для моряка</a>
+  <a align="left" href="additional_data.html">Дополнительные данные о моряке</a>
+   <a align="left" href="manager.html">Менеджеру</a>
+   <a align="left" href="constants.html">Константы</a>
+   <a align="left" href="POISK.html">Информация о моряке</a>
+  <a align="left" href="#">В каких компаниях работают наши моряки</a>
+  <a align="left" href="in_faight.html">Кого из моряков можно направить на судно</a>
+</div>
+					</div> 
+				</div>
+				
+				
+				
+				
+				<div class="right_col">
+			    <div class="inner-right_col">
+			<div class="container">
+			
+			<p> Старница заполняеться только менеджером! </p>
+			 <table>
+			
+			 
+			
+		
+			 
+	         <tr>
+			   
+			<td>
+			<form action="1.php" form method="POST">
+				 <p><h2>Cтрана</h2><br>
+             <p>Код страны:<br> 
+             <input type="text" name="idCountry" /></p>
+             <p>Страна: <br> 
+             <input type="text" name="Name" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>      
+			 
+             <td>
+			<form action="The_country_issued_visa.php" form method="POST">
+				 <p><h2>Cтрана выдачи визы</h2><br>
+             <p>Код страны выдачи визы:<br> 
+             <input type="text" name="idThe_country_issued_visa" /></p>
+             <p>Код страны: <br> 
+             <input type="text" name="Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			  		
+
+</tr>
+<tr>
+               <td>
+			<form action="Shipowners.php" form method="POST">
+				 <p><h2>Судовладельцы</h2><br>
+             <p>Код судовладельца:<br> 
+             <input type="text" name="idShipowners" /></p>
+             <p>Почта: <br> 
+             <input type="text" name="Email" /></p>
+             <p>Компания:<br> 
+             <input type="text" name="Company" /></p>
+             <p>Код страны: <br> 
+             <input type="text" name="Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br> 
+			  </form>
+			 </td>
+			  
+			  
+			  <td> 
+			   <p><h2>Судно</h2><br>
+			  <form action="ship.php" form method="POST">
+             <p>Тип судна:<br> 
+             <input align="center" type="text" name="Type_of_vessel" /></p>
+             <p>Имя судна: <br> 
+             <input type="text" name="Ship_name" /></p>
+			 <p>Владелец судна:<br>
+			 <input type="text" name="Shipowners_idShipowners" /></p>
+             <p>Код страны:<br>
+			 <input type="text" name="Country_idCountry" /></p>
+			 
+             <p><input type="submit" value="Добавить" class="registerbtn"><br>
+			 </form>
+			  </td>
+			  
+			  
+			 </tr>
+			   
+			  
+				  
+			 </table>
+				  
+            
+			 </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer"><p>© 2020 Молчанюк Юлия Евгеньевна ФСИТиС 4/2 </p></div>
+			</div>
+			<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+			<script>
+				function doClick(){
+					alert("Кнопка нажата")
+				}
+			</script>
+
+			<script>
+		</body>
+		</html>
